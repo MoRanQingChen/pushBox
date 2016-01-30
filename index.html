@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #game{
+            width: 560px;
+            height: 560px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            background-color: #73e029;
+        }
+        #game>img{display: none}
+        canvas{
+            position: absolute;
+            right: 0;
+            left: 0;
+        }
+        #menu{
+            width: 200px;
+            height: 100px;
+            background-color: rgba(0,211,225,0.5);
+            border-radius: 20px;
+            position: absolute;
+            bottom: 10px;
+            right: -180px;
+            box-shadow: aliceblue 0 0 10px;
+            -webkit-transition: all 1s ;
+            -moz-transition: all 1s ;
+            -ms-transition: all 1s ;
+            -o-transition: all 1s ;
+            transition: all 1s ;
+        }
+        #menu:hover{
+            width: 380px;
+        }
+        #menu>input{
+            margin-top: 20px;
+            margin-left: 25px;
+            width: 150px;
+        }
+        #text{
+            width: 20px;
+            height: 100%;
+            color: white;
+            position: absolute;
+            line-height: 50px;
+        }
+        #button{
+            margin-top: 20px;
+            margin-left: 45px;
+        }
+        #button>button{
+            color: #3684be;
+        }
+    </style>
+    <script src="JS/mapdata100.js"></script>
+    <script src="JS/boxGame.js"></script>
+</head>
+<body>
+    <div id="game">
+        <canvas id="canvas1" width="560px" height="560px"></canvas>
+        <canvas id="canvas2" width="560px" height="560px"></canvas>
+
+
+        <img src="img/wall.png">
+        <img src="img/box.png">
+        <img src="img/yelloball.png">
+        <img src="img/block.gif">
+        <div id="menu">
+            <div id="text">菜单</div>
+            <input id="guaQia">
+            <div id="button">
+                <button id="jump">跳关</button>
+                <button id="replay">重玩本关</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
